@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DITDetailViewController : UIViewController
+@interface DITDetailViewController : UITableViewController
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @property (strong, nonatomic) id detailItem;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
 @end
